@@ -3,173 +3,448 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <title>Complete Responsive  Flower Website Design Tutorials</title>
+     <!--Font awesome cdn link-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!--custom css file link-->
+     <link rel="stylesheet" href="style.css"> 
 </head>
-
 <body>
-    
-  <header>
-    
-    <div class="navbar">
-      <div class="navbar-container container">
-        <div>
-          <h1 class="navbar-brand">Nihala Sherin</h1>
-        </div>
-        <ul class="menu-items">
-          <li><a href="#about">About</a></li>
-          <li><a href="#my-projects">Project</a></li>
-          <li><a href="#contact-me">Contact</a></li>
-        </ul>
-      </div>
-      
-    </div>
-    <div class="home-content" id="home-page">
-      <div class="name">
-        <h1>Hi, I'm Nihala</h1>
-        <p>A Web Developer .</p>
-      </div>
-    </div>
-  </header>
-  <section class="about-me" id="about">
 
-    <div class="container">
-        <div class="about-content">
-          <div class="left-content">
-            <div>
-              <h1 class="about-heading">About Me</h1>
-            </div>
-          <img src="cute.jpeg">
-          <p>
-            I am 20 year old,CS student studied at Mercy College.
-            I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new
-            things; the more, the better.
-          </p>
-          <div class="work-arrow">
-            <p>
-              <a href="#my-projects">Check out my work <i class="fas fa-arrow-down"></i></a>
-            </p>
-          </div>
+    <!--Header section starts-->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo"><i>Paradise<span>_aze</span></i></a>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="skills">
-          <div class="right-content">
-            <div>
-                <h1 class="skills-heading">My Skills</h1>
-            </div>
-            <div class="skills-bar">
-              <div class="bar">
-                <div class="info">
-                  <span>HTML</span>
-                </div>
-                <div class="progress-line"><span class="html"></span></div>
-                <div class="bar">
-                  <div class="info">
-                    <span>CSS</span>
-                  </div>
-                  <div class="progress-line"><span class="css"></span></div>
-                  <div class="bar">
-                    <div class="info">
-                      <span>PYTHON</span>
-                    </div>
-                    <div class="progress-line"><span class="python"></span></div>
-                    <div class="bar">
-                      <div class="info">
-                        <span>PHP</span>
-                      </div>
-                      <div class="progress-line"><span class="php"></span></div>
-                      <div class="bar">
-                        <div class="info">
-                          <span>C Programming</span>
-                        </div>
-                        <div class="progress-line"><span class="c"></span></div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="work-arrow-2">
-          <p>
-            <a href="#my-projects">Check out my work <i class="fas fa-arrow-down"></i></a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="my-projects">
-    <div class="porject">
-      <div class="proj-heading">
-        <h1><ul>My Works</ul></h1>
-      </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-            <img src="Screenshot (4).png">
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+            <a href="#" class="fas fa-menue-box"></a>
+            
 
-          <div class="proj1-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <h2>Boquet website</h2>
-            <p>Build Using HTML,CSS,JS</p>
-            <button><a href="file:///C:/Users/NIHALA%20SHERIN.A/Desktop/sample%20site/flower.html" target="blank">View source <i
-                  class="fas fa-external-link-alt"></i></a>
-            </button>
-            <button><a href="file:///C:/Users/NIHALA%20SHERIN.A/Desktop/sample%20site/flower.html" target="blank">Try it Live <i
-                  class="fas fa-external-link-alt"></i></a>
-                </button>
-                
-              </div>
-            </div>
+            
+        </div>
+    </header>
+     <!--Header section ends-->
+
+
+     <!--Home section starts-->
+     <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh Flowers</h3>
+            <span>Natural & beautiful flowers</span>
+            <p><b>FLOWERS /BOUQUET /DELIVERY</b></p>
+            <a href="#products" class="btn"> Shop Now</a>
+        </div>
+        </div>
+     </section>
+
+
+    <!--Home section ends-->
+
+
+  <!--About section starts-->
+<section class="about" id="about">
+    <h1 class="heading"><span>about</span> us</h1>
+    <div class="row">
+        <div class="video-container">
+            <video src="flo.mp4" loop autoplay muted></video>
+            <h3>best flowers and bouquet sellers</h3>
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Wedding,Anniversary,Birthday</p>
+            <p>best service required and fresh flowers.<br>online and cash on delivery availble.<br> 24/7 delivery<br>cancellation upto one hour</p>
+            <a href="#" class="btn">Learn More</a>
+
+    </div>
+</section>
+
+  <!--About section ends-->
+
+<!--icons section starts-->
+
+<section class="icons-container">
+    <div class="icons">
+        <img src="icon-1.png" alt="">
+        <div class="info">
+            <h3>Free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="icon-2.png" alt="">
+        <div class="info">
+            <h3>1 hour returns</h3>
+            <span>Moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="icon-3.png" alt="">
+        <div class="info">
+            <h3>offer & gits</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="icon-4.png" alt="">
+        <div class="info">
+            <h3>secure paymens</h3>
+            <span>protected by googlepay</span>
+        </div>
+    </div>
+</section>
+
+<!--icons section ends-->
+
+<!--Products section stars-->
+
+<section class="products" id="products">
     
-            <div class="proj-2">
-              <img src="Screenshot (5).png">
-              <div class="proj2-details">
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-css3-alt"></i>
-                <i class="fab fa-js"></i>
-                <h2>Check-box</h2>
-                <p>Build Using HTML,CSS,JS</p>
-                <button><a href="file:///C:/Users/NIHALA%20SHERIN.A/Desktop/nihala/check.html" target="blank">View source <i
-                      class="fas fa-external-link-alt"></i></a>
-                </button>
-                <button><a href="file:///C:/Users/NIHALA%20SHERIN.A/Desktop/nihala/check.html" target="blank">Try it Live <i
-                      class="fas fa-external-link-alt"></i></a>
-                </button>
-              </div>
-            </div>
-            <div class="more-projects">
-                  <p>
-                    More
-                  </p>
-                  
-                
-                  <a href="file:///C:/Users/NIHALA%20SHERIN.A/Desktop/nihala/love.html" target="blank">My works</a>
+           <h1 class="heading"><p class="blink">Latest Products</p></h1>
+    <div class="box-container">
+        <div class="box">
+            <span class="discount">-15%</span>
+            <div class="image">
+                <img src="b5-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
                 </div>
-              </div>
             </div>
-          </section>
-          <div class="contact" id="contact-me">
-            <div class="container">
-              <div class="contact-content">
-                <h2>Contact Me</h2>
-                <p class="mail">
-                  Get in touch with me <i class="fas fa-arrow-right"></i>nihalasherin624@gmail.com
-                </p>
-                <p class="links">Or find me on:</p>
-                <a href="https://www.linkedin.com/mynetwork/grow/" target="blank"><i class="fab fa-linkedin">
-                    Linkedin</i></a>
-                <a href="https://github.com/" target="blank"><i class="fab fa-github"></i> Github</a>
-                <a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
-                <a href="https://www.instagram.com/" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
-              </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1322.99 <span>1543.99</span></div>
             </div>
-          </div>
-        </body>
-        </html>
+        </div>
+
+        <div class="box">
+            <span class="discount">15%</span>
+            <div class="image">
+                <img src="b66.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">1300.99 <span>1500.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-5%</span>
+            <div class="image">
+                <img src="bb1-removebg-preview (1).png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1434.99 <span>1509.19</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-20%</span>
+            <div class="image">
+                <img src="bb2-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1222.99 <span>1599.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-7%</span>
+            <div class="image">
+                <img src="b777.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1334.99 <span>1790.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-3%</span>
+            <div class="image">
+                <img src="b3-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">1800.99 <span>2000.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-2%</span>
+            <div class="image">
+                <img src="bo1-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Flower pot</h3>
+                <div class="price">1520.10 <span>1750.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-10%</span>
+            <div class="image">
+                <img src="bb8-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1549.09 <span>1765.00</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-35%</span>
+            <div class="image">
+                <img src="free-photo-of-a-flower-is-laying-on-a-bed-sheet-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1100.99 <span>1500.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-40%</span>
+            <div class="image">
+                <img src="bb6-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1001.99 <span>1905.39</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-9%</span>
+            <div class="image">
+                <img src="bbb5-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1300.99 <span>1500.99</span></div>
+            </div>
+        </div>
+
+        <div class="box">
+            <span class="discount">-25%</span>
+            <div class="image">
+                <img src="bb3-removebg-preview.png" alt="">
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="cart-btn">add to cart</a>
+                    <a href="#" class="fas fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>BOUQUET</h3>
+                <div class="price">1480.99 <span>1500.12</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Products section ends-->
+
+
+<!--review section starts-->
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</spa
+        n></h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>Good service</p>
+            <div class="user">
+                <img src="feb.jpg" alt="">
+                <div class="user-info">
+                    <h3>Febina</h3>
+                    <span>Happy Customers</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>AWS products!!!!!!!!!!!</p>
+            <div class="user">
+                <img src="min.jpg" alt="">
+                <div class="user-info">
+                    <h3>Minna</h3>
+                    <span>Happy Customers</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+
+        <div class="box">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+                <p>nice job guy's,god luck for four future </p>
+            <div class="user">
+                <img src="saj.jpg" alt="">
+                <div class="user-info">
+                    <h3>sajna jammal</h3>
+                    <span>Happy Customers</span>
+                </div>
+            </div>
+            <span class="fas fa-quote-right"></span>
+        </div>
+            
+        
+    </div>
+</section>
+
+<!--review section ends-->
+
+
+<!--contact section starts-->
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact</span> us</h1>
+    <div class="row">
+        <form action="">
+            <input type="text" class="box" placeholder="Name">
+            <input type="email" class="box" placeholder="Email">
+            <input type="number" class="box" placeholder="Number">
+            <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send massage" class="btn">
+        </form>
+        <div class="image">
+            <img src="cont.jpg" alt="">
+        </div>
+    </div>
+</section>
+<!--contact section ends-->
+
+<!--footer section starts-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">about</a>
+            <a href="#">products</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorites</a>
+        </div>
+        <div class="box">
+            <h3>Locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">France</a>
+            <a href="#">Japan</a>
+            <a href="#">Ukraine</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">985632147785</a>
+            <a href="#">paradizaflower@gmail.com</a>
+            <a href="#">tvm,kerala- 500203</a>
+          <img src="payment.png" alt="">
+       
+        </div>
+    </div>
+    <div class="credit">
+        &copy; Created by <span> Nihala sherin</span> All Right Reserved.
+        <h6>terms  privacy  security  status  docs  cotact </h6>
+    </div>
+</section>
+
+
+<!--footer section ends-->
+
+
+
+
+
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 :root{
-    --pink: purple;
+    --pink:lightblue;
 }
 *{
     margin: 0;
@@ -9,7 +9,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: .2s linear;
+    transition: .4s linear;
 
 }
 
@@ -27,49 +27,49 @@ section{
 .heading{
     text-align: center;
     font-size: 4rem;
-    color: plum;
+    color: rgba(255,51,153,0.5);
     padding: 1rem;
     margin: 2rem 0;
-    background: white;
+    background: rgba(22,3,4,5);
 
 }
 
 .heading span{
-    color: purple;
+    color: lightblue;
 }
 .btn{
-    display: inline;
+    display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: purple;
-    color: white;
+    background: lightblue;
+    color: rgba(255,51,153,0.5);
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 .btn:hover{
-    background: purple;
+    background: lightblue;
 }
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    background: plum;
+    background: lightblue;
     padding: 2rem 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem white;
+    box-shadow: 0 .5rem 1rem rgb(4.3, 0, 1.5, .1);
 }
 
  header .logo{
     font-size:3rem;
-    color: black;
-    font-weight: initial;
+    color: rgba(255,51,153,0.5);
+    font-weight: bolder;
  }
 
 header .logo span{
-    color: purple;
+    color: lightblue;
 }
 
 header .navbar a{
@@ -79,7 +79,7 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color: white;
+    color: rgba(255,51,153,0.5);
 }
 
 header .icons a{
@@ -89,7 +89,7 @@ header .icons a{
 }
 
 header .icons a:hover{
-    color: purple;
+    color: lightblue;
 }
 
 header #toggler{
@@ -98,7 +98,7 @@ header #toggler{
 
 header .fa-bars{
     font-size: 3rem;
-    color: black;
+    color: grey;
     border-radius: .5rem;
     padding: .5rem 1.5rem;
     cursor: pointer;
@@ -107,15 +107,32 @@ header .fa-bars{
 }
 
 
-.home{
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    background: url("back4.jpeg") no-repeat;
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
+    transition: opacity 5s;
+  }
+  
+  .slide-active {
+    opacity: 1;
+  }
+  
+  .slide-hidden {
+    opacity: 0;
+  }
+  
+  
 .home .content{
     max-width: 50rem;
 }
@@ -230,25 +247,6 @@ header .fa-bars{
     color: #555;
     font-size: 1.3rem;
 }
-.blink {
-    animation: blink 1s infinite;
-  }
-  
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  
-  
-  
 
 .products .box-container{
     display: flex;
@@ -365,12 +363,12 @@ header .fa-bars{
     position: absolute;
     bottom: 3rem; right: 3rem;
     font-size: 6rem;
-    color: black;
+    color: #eee;
 
 }
 
 .review .box-container .box .stars i{
-    color: purple;
+    color: var(--pink);
     font-size: 2rem;
 }
 
@@ -430,13 +428,12 @@ header .fa-bars{
 
 .contact.row .image img{
     width: 100%;
-    height: auto;
 }
 
 .contact .row form .box{
     pad: 1rem;
     font-size: 1.7rem;
-    color: white;
+    color: #333;
     text-transform: none;
     border:.1rem solid rgba(0,0,0,.1);
     border-radius:.5rem;
@@ -445,11 +442,11 @@ header .fa-bars{
 }
 
 .contact .row form .box:focus{
-    border-color: plum;
+    border-color: var(--pink);
 }
 
 .contact .row form textarea{
-    height: 20rem;
+    height: 15rem;
     resize: none;
 }
 
@@ -465,14 +462,14 @@ header .fa-bars{
 }
 
 .footer .box-container .box h3{
-    color: plum;
+    color: #333;
     font-size: 2.5rem;
     padding: 1rem 0;
 }
 
 .footer .box-container .box a{
     display: block;
-    color: black;
+    color: #666;
     font-size: 1.5rem;
     padding: 1rem 0;
 }
@@ -498,7 +495,7 @@ header .fa-bars{
 }
 
 .footer .credit span{
-    color: purple;
+    color: var(--pink);
 }
 
 
@@ -576,3 +573,4 @@ section{
     }
     
     }
+
